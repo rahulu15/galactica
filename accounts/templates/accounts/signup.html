@@ -1,0 +1,26 @@
+<!-- SINGUP PAGE-->
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+
+{% block content %}
+
+<div >
+  <!-- SINGUP FORM-->
+  <div  class="content col-md-5" style=" margin-top:-10%; padding:30px;" >
+      <h1>Sign Up</h1>
+      <form method="POST">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          <input type="submit" value="Sign Up" class="nav_button sign">
+      </form>
+  </div>
+  <!-- SMALL GIF ANIMATION -->
+  <div  class="col-md-5" style="margin-left:8%; margin-top:-5%;">
+    <img style="border: 3px solid white; border-radius:50%;" src="{% static 'images/spacesign.gif' %}" alt="Cant display image">
+  </div>
+
+</div>
+
+{% endblock %}

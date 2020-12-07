@@ -1,0 +1,95 @@
+/* final font import */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+.mycontent{
+  padding-top: 100px;
+}
+/* general body styling */
+html,
+.bod {
+  height: 100%;
+  width: 100%;
+  font-family: 'Exo', sans-serif;
+  background: #000;
+  overflow-x:hidden;
+  margin: 0;
+}
+
+
+#note {
+  position: absolute;
+  color: rgba(249,241,204,1);
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+  font-family: Arial;
+}
+/* navbar styling */
+.nav_home{
+  padding-top: 20px;
+  font-size: 3em;
+}
+.nav_button {
+  background-color: transparent;
+  margin-top: 5px;
+  text-transform: uppercase;
+  border-radius: 0.2em;
+  transition: 250ms ease-in-out, color 300ms ease-in-out;
+}
+
+.nav_button:focus{
+  color: #fff;
+  outline: 0;
+}
+.nav_button:hover
+{
+   color: #000;
+   outline: 0;
+   box-shadow: 0 0 40px 40px #fff inset;
+}
+.navbar a:link{
+  text-decoration: none;
+}
+.navbar a{
+  color: #ffff;
+}
+
+.mynav{
+  position: sticky;
+  top: 0px;
+  background-color: #000;
+  z-index: 9999;
+  border-color: #fff;
+}
+/* Making the text white where the class is added */
+.content{
+color: #fff;
+}
+/* DISTINCT BUTTON STYLING */
+.sign{
+  width: auto;
+  height: auto;
+  padding: -5px;
+  background-color:#19ff;
+  color: #fff;
+  line-height:38px;
+}
+/* distinct button 2 */
+.newgroup{
+  width:auto;
+  height:50px;
+  padding-top: 4%;
+  background-color:#1888;
+  color: #ffff;
+}
+/* Distinct button 3 */
+.warn{
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color:#FA380E;
+  line-height:38px;
+}
